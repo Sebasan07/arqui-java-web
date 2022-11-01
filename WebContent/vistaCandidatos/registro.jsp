@@ -99,7 +99,7 @@
             </div>
         </div>
         <hr>
-        <p>2021 © All Rights Reserved. Desarrollado por JUAN SEBASTIAN SANCHEZ PRADA </p>
+        <p>2022 © All Rights Reserved </p>
     </footer>
 </body>
 </html>
