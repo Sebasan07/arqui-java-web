@@ -45,7 +45,7 @@
 	<div id="botones" class="container text-left">
 		
 		<a href="<%=request.getContextPath()%>/VotanteServlet?action=index" class="btn btn-success">Ir al
-			menú</a> <a href="<%=request.getContextPath()%>/vistaVotantes/mostrar.jsp"
+			menú votantes</a> <a href="<%=request.getContextPath()%>/vistaVotantes/mostrar.jsp"
 			class="btn btn-success">Listar Votantes</a>
 	</div>
 

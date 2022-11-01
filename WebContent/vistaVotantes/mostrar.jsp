@@ -38,7 +38,9 @@
 			<hr>
 			<div class="container text-left">
 
-				<a href="<%=request.getContextPath()%>/vistaVotantes/registro.jsp"
+				<a href="<%=request.getContextPath()%>/VotanteServlet?action=index"
+					class="btn btn-success">Ir al menú votantes</a> <a
+					href="<%=request.getContextPath()%>/vistaVotantes/registro.jsp"
 					class="btn btn-success">Registrar nuevo Votante</a> <a
 					href="<%=request.getContextPath()%>/VotanteServlet?action=mostrar"
 					class="btn btn-success">Mostrar listado de Votantes</a>
@@ -61,19 +63,19 @@
 					<!--   for (Todo todo: todos) {  -->
 					<c:forEach var="votante" items="${lista}">
 						<tr>
-						<c:if test="${votante.id!=null }">
-						
-							<td><c:out value="${votante.id}" /></td>
-							<td><c:out value="${votante.nombre}" /></td>
-							<td><c:out value="${votante.email}" /></td>
-							<td><c:out value="${votante.documento}" /></td>
-							<td><c:out value="${votante.tipoDocumento}" /></td>
-							<td><c:out value="${votante.eleccion}" /></td>
-							<td><a
-								href="<%=request.getContextPath()%>/VotanteServlet?action=showedit&id=<c:out value="${votante.id}" />">Editar</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
-								href="VotanteServlet?action=eliminar&id=<c:out value="${votante.id}"/>">Eliminar</a>
-							</td>
-						</c:if>
+							<c:if test="${votante.id!=null }">
+
+								<td><c:out value="${votante.id}" /></td>
+								<td><c:out value="${votante.nombre}" /></td>
+								<td><c:out value="${votante.email}" /></td>
+								<td><c:out value="${votante.documento}" /></td>
+								<td><c:out value="${votante.tipoDocumento}" /></td>
+								<td><c:out value="${votante.eleccion}" /></td>
+								<td><a
+									href="<%=request.getContextPath()%>/VotanteServlet?action=showedit&id=<c:out value="${votante.id}" />">Editar</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+									href="VotanteServlet?action=eliminar&id=<c:out value="${votante.id}"/>">Eliminar</a>
+								</td>
+							</c:if>
 						</tr>
 					</c:forEach>
 					<!-- } -->

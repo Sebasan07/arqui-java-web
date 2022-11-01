@@ -31,6 +31,8 @@
 	<div class="container">
 		<hr>
 		<div id="botones" class="container text-left">
+		<a href="<%=request.getContextPath()%>/index.jsp" class="btn btn-success">Ir al
+			menú principal</a>
 			<a href="<%=request.getContextPath()%>/vistaCandidatos/registro.jsp"
 					class="btn btn-success">Añadir nuevo Candidato</a> 
 			<a href="CandidatoServlet?action=mostrar" class="btn btn-success">Mostrar listado de Candidatos</a>

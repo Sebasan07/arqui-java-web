@@ -34,7 +34,7 @@
 	<div id="botones" class="container text-left">
 		
 		<a href="<%=request.getContextPath()%>/CandidatoServlet?action=index" class="btn btn-success">Ir al
-			menú</a> 			
+			menú candidatos</a> 			
 		<a href="<%=request.getContextPath()%>/vistaCandidatos/registro.jsp"
 					class="btn btn-success">Registrar nuevo Candidato</a>
 		<a href="<%=request.getContextPath()%>/vistaCandidatos/mostrar.jsp"

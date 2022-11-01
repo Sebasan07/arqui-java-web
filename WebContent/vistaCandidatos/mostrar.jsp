@@ -38,7 +38,10 @@
 			<hr>
 			<div class="container text-left">
 
-				<a href="<%=request.getContextPath()%>/vistaCandidatos/registro.jsp"
+				<a
+					href="<%=request.getContextPath()%>/CandidatoServlet?action=index"
+					class="btn btn-success">Ir al menú candidatos</a> <a
+					href="<%=request.getContextPath()%>/vistaCandidatos/registro.jsp"
 					class="btn btn-success">Registrar nuevo Candidato</a> <a
 					href="<%=request.getContextPath()%>/CandidatoServlet?action=mostrar"
 					class="btn btn-success">Mostrar listado de Candidatos</a>
@@ -64,7 +67,7 @@
 							<td><c:out value="${candidato.id}" /></td>
 							<td><c:out value="${candidato.nombre}" /></td>
 							<td><c:out value="${candidato.apellido}" /></td>
-							<td><c:out value="${candidato.documento}" /></td>							
+							<td><c:out value="${candidato.documento}" /></td>
 							<td><c:out value="${candidato.eleccion}" /></td>
 							<td><c:out value="${candidato.numero}" /></td>
 							<td><a
